@@ -33,38 +33,37 @@
 
 
 
-### Sample Screenshots and Results:
+## Sample Screenshots and Results:
 
-**1. View for vendor info and products from 2002 onwards**
+### 1. View for vendor info and products from 2002 onwards**
+#### Code:
+![Image](https://github.com/user-attachments/assets/588bcf3e-9c55-4b1b-9ce2-355c480fb1d0)
+#### Output:
+![Image](https://github.com/user-attachments/assets/b56d25dc-6312-494b-a192-5c76d125572d)
 
-* Code:
- ![Image](https://github.com/user-attachments/assets/588bcf3e-9c55-4b1b-9ce2-355c480fb1d0)
-* Output:
- ![Image](https://github.com/user-attachments/assets/b56d25dc-6312-494b-a192-5c76d125572d)
+### 2. View for products priced between 100 and 150**
 
-**2. View for products priced between 100 and 150**
+#### Code:
+![Image](https://github.com/user-attachments/assets/f704bb34-abdc-4ca6-971b-597c7077044a)
+#### Output:
+![Image](https://github.com/user-attachments/assets/8bd906ef-22cc-46d6-9776-1239cfb210b8)
 
-* Code:
- ![Image](https://github.com/user-attachments/assets/f704bb34-abdc-4ca6-971b-597c7077044a)
-* Output:
- ![Image](https://github.com/user-attachments/assets/8bd906ef-22cc-46d6-9776-1239cfb210b8)
+### 3. View to calculate total product price from selected vendors**
 
-**3. View to calculate total product price from selected vendors**
+#### Code:
+![Image](https://github.com/user-attachments/assets/b770922d-e6b9-4f25-83e1-b3b488d8abb2)
+#### Output:
+![Image](https://github.com/user-attachments/assets/660a718c-da43-4eb0-9f42-f19a60637c89)
+### 4. Stored procedure to update vendor name**
 
-* Code:
-  ![Image](https://github.com/user-attachments/assets/b770922d-e6b9-4f25-83e1-b3b488d8abb2)
-* Output:
-  ![Image](https://github.com/user-attachments/assets/660a718c-da43-4eb0-9f42-f19a60637c89)
-**4. Stored procedure to update vendor name**
+#### Code:
+![Image](https://github.com/user-attachments/assets/dca28b72-c223-42e4-9031-c6c1c2eaaf30)
 
-* Code:
- ![Image](https://github.com/user-attachments/assets/dca28b72-c223-42e4-9031-c6c1c2eaaf30)
+#### Output:
+![Image](https://github.com/user-attachments/assets/90f12ea7-f646-43f9-898f-a832b0a1a971)
+### 5. Function to filter products by vendor code and state**
 
-* Output:
- ![Image](https://github.com/user-attachments/assets/90f12ea7-f646-43f9-898f-a832b0a1a971)
-**5. Function to filter products by vendor code and state**
-
-* Code:
- ![Image](https://github.com/user-attachments/assets/9b42d3e9-a178-4430-be65-3fdf0abdc37b)
-* Output:
- ![Image](https://github.com/user-attachments/assets/9ccd3e8b-5f13-471c-b001-9cae3f2edfb0)
+#### Code:
+![Image](https://github.com/user-attachments/assets/9b42d3e9-a178-4430-be65-3fdf0abdc37b)
+#### Output:
+![Image](https://github.com/user-attachments/assets/9ccd3e8b-5f13-471c-b001-9cae3f2edfb0)
