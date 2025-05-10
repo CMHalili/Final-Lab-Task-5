@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Finals Lab Task 1 - MySQL Basics</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #1c1e21;
+      overflow-x: hidden;
+      background: url('https://img1.picmix.com/output/stamp/normal/0/7/8/0/2580870_8444e.gif') repeat;
+      background-size: 200px;
+    }
+
+    header {
+      padding: 3rem 2rem 1rem;
+      background-color: #00CDFEcc;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      color: #fff;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      text-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+    .profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin-right: 1.5rem;
+  float: left;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+    section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: #00CDFEcc;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin: 2rem 0 1rem;
+      color: #1877f2;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .card p, .card a {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #1c1e21;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto 1rem;
+    }
+
+    footer {
+      padding: 1rem 2rem;
+      font-size: 0.9rem;
+      background-color: #00CDFEcc;
+      color: #fff;
+      text-align: center;
+    }
+     /* Button design for download link */
+    .download-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: none;
+      background-color: #1877f2;
+      color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #0f5db7;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+ <header>
+  <img src="https://github.com/CMHalili/EDM-V3/blob/main/Images/kawaiichibicass.gif?raw=true" alt="Cassandra Halili" class="profile-pic" />
+  <h1><strong>Finals Lab Task 5</strong></h1>
+  <p><strong>Views, Stored Procedures</strong></p>
+  <p><strong>Procedures and Functions</strong></p>
+</header>
+
+  <div style="max-width: 900px; margin: 2rem auto; padding: 0 2rem;">
+  <section style="overflow: auto;">
+      <h2>Portfolio Overview</h2>
+      <div class="card">
+        <p>This portfolio showcases the application of SQL views, stored procedures, and functions to handle and manipulate database data. It includes tasks such as filtering data using views, updating information through procedures, and retrieving results using functions.</p>
+        <!-- Download Button -->
+        <a href="https://github.com/user-attachments/files/20138406/Halili.Lab.Task.5.docx" class="download-btn" download>
+            Download The Word File
+        </a>
+      </div>
+
+      <h2>Step by Step Process</h2>
+      <div class="card">
+        <ol>
+    <li><strong>Initialize MySQL Workbench:</strong>
+      <ul>
+        <li>Launch XAMPP and start the MySQL server.</li>
+        <li>Connect to the server via MySQL Workbench.</li>
+        <li>Run test queries using the <code>democodes.sql</code> script.</li>
+      </ul>
+    </li>
+    <li><strong>Access the Inventory Database:</strong>
+      <ul>
+        <li>Begin working with the <code>inventory.sql</code> file.</li>
+      </ul>
+    </li>
+    <li><strong>Build SQL Views:</strong>
+      <ul>
+        <li>Create a view to show vendor and product information for items with an in-date from 2002 onwards.</li>
+        <li>Make a view listing products priced between 100 and 150.</li>
+        <li>Create a view to calculate the total price (<code>on_hand * price</code>) for items sold by selected vendors.</li>
+      </ul>
+    </li>
+    <li><strong>Develop a Stored Procedure:</strong>
+      <ul>
+        <li>Write a procedure to change the vendor name from 'Bryson, Inc.' to 'Bryson and Co'.</li>
+      </ul>
+    </li>
+    <li><strong>Write a Function:</strong>
+      <ul>
+        <li>Create a function that accepts vendor code and state as inputs, returning product descriptions and prices that match.</li>
+      </ul>
+    </li>
+    <li><strong>Run and Document Results:</strong>
+      <ul>
+        <li>Execute all SQL commands and include screenshots of both the code and the output.</li>
+      </ul>
+    </li>
+  </ol>
+
+  <h2>Sample Screenshots and Results</h2>
+
+  <h3>1. View for vendor info and products from 2002 onwards</h3>
+  <h4>Code:</h4>
+  <img src="https://github.com/user-attachments/assets/588bcf3e-9c55-4b1b-9ce2-355c480fb1d0" alt="Code for vendor info and products from 2002 onwards">
+  <h4>Output:</h4>
+  <img src="https://github.com/user-attachments/assets/b56d25dc-6312-494b-a192-5c76d125572d" alt="Output for vendor info and products from 2002 onwards">
+
+  <h3>2. View for products priced between 100 and 150</h3>
+  <h4>Code:</h4>
+  <img src="https://github.com/user-attachments/assets/f704bb34-abdc-4ca6-971b-597c7077044a" alt="Code for products priced 100-150">
+  <h4>Output:</h4>
+  <img src="https://github.com/user-attachments/assets/8bd906ef-22cc-46d6-9776-1239cfb210b8" alt="Output for products priced 100-150">
+
+  <h3>3. View to calculate total product price from selected vendors</h3>
+  <h4>Code:</h4>
+  <img src="https://github.com/user-attachments/assets/b770922d-e6b9-4f25-83e1-b3b488d8abb2" alt="Code for total price view">
+  <h4>Output:</h4>
+  <img src="https://github.com/user-attachments/assets/660a718c-da43-4eb0-9f42-f19a60637c89" alt="Output for total price view">
+
+  <h3>4. Stored procedure to update vendor name</h3>
+  <h4>Code:</h4>
+  <img src="https://github.com/user-attachments/assets/dca28b72-c223-42e4-9031-c6c1c2eaaf30" alt="Code for stored procedure">
+  <h4>Output:</h4>
+  <img src="https://github.com/user-attachments/assets/90f12ea7-f646-43f9-898f-a832b0a1a971" alt="Output for stored procedure">
+
+  <h3>5. Function to filter products by vendor code and state</h3>
+  <h4>Code:</h4>
+  <img src="https://github.com/user-attachments/assets/9b42d3e9-a178-4430-be65-3fdf0abdc37b" alt="Code for function">
+  <h4>Output:</h4>
+  <img src="https://github.com/user-attachments/assets/9ccd3e8b-5f13-471c-b001-9cae3f2edfb0" alt="Output for function">
+</section>
+</div>
+ <footer>
+    <p>©Cassandra Halili | Class I102 | 2025</p>
+    <a href="https://github.com/CMHalili/Final-Lab-Task-5" target="_blank" style="color:var(--neon); text-shadow: 0 0 6px var(--neon);">View Finals Lab Task 5 on Github</a>
+  </footer>
+
+</body>
+</html>
